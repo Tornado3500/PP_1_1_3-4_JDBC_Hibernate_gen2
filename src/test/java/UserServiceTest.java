@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class UserServiceTest {
-    private final UserService userService = new UserServiceImpl();
+    private final UserService service = new UserServiceImpl();
 
     private final String testName = "Ivan";
     private final String testLastName = "Ivanov";
@@ -99,4 +99,7 @@ public class UserServiceTest {
         }
     }
 
+    public UserService getService() {
+        return service;
+    }
 }
